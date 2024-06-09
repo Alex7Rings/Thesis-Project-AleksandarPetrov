@@ -1,0 +1,25 @@
+﻿@using ImageClassificationApp_Web
+@model MLModel_Sport.ModelOutput
+
+@{
+    ViewData["Title"] = "Classification Result";
+    var imagePath = ViewData["ImagePath"] as string;
+    var accuracy = ViewData["Accuracy"] as float?;
+}
+
+<h1>Classification Result</h1>
+
+<p>Predicted Label: @Model.PredictedLabel</p>
+
+@if (accuracy.HasValue)
+{
+    <p>Prediction Accuracy: @(Math.Round(accuracy.Value * 100))%</p>
+}
+
+@if (!string.IsNullOrEmpty(imagePath))
+{
+    <div>
+        <h2>Uploaded Image:</h2>
+        <img src="@imagePath" alt="Uploaded Image" style="max-width: 100%; height: auto;" />
+    </div>
+}
