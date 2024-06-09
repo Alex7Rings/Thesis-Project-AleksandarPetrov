@@ -37,6 +37,9 @@ namespace ImageClassificationApp.Web.Controllers
             var sampleData = new MLModel_Art.ModelInput { ImageSource = imageBytes };
             var result = MLModel_Art.Predict(sampleData);
 
+            // Translate the predicted label
+            result.PredictedLabel = MLModel_Art.TranslateLabel(result.PredictedLabel);
+
             float accuracy = result.Score.Max();
 
             ViewData["ImagePath"] = $"/uploads/{fileName}";

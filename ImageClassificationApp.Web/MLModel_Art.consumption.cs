@@ -9,6 +9,22 @@ namespace ImageClassificationApp_Web
 {
     public partial class MLModel_Art
     {
+        private static readonly Dictionary<string, string> LabelTranslations = new Dictionary<string, string>
+        {
+            { "AiArtData", "Изкуство от AI" },
+            { "RealArt", "Истинско изкуство" }
+            // Add more translations as needed
+        };
+
+        public static string TranslateLabel(string label)
+        {
+            if (LabelTranslations.TryGetValue(label, out var translatedLabel))
+            {
+                return translatedLabel;
+            }
+            return label; // Return the original label if no translation is found
+        }
+
         /// <summary>
         /// model input class for MLModel_Art.
         /// </summary>

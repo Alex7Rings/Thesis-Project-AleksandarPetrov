@@ -8,21 +8,21 @@
 }
 
 <div class="result-container">
-    <h1>Classification Result</h1>
+    <h1>Резултат от класификацията</h1>
 
     <div class="result-details">
-        <p><strong>Predicted Label:</strong> @Model.PredictedLabel</p>
+        <p><strong>Прогнозa:</strong> @Model.PredictedLabel</p>
 
         @if (accuracy.HasValue)
         {
-            <p><strong>Prediction Accuracy:</strong> @(Math.Round(accuracy.Value * 100))%</p>
+            <p><strong>Точност на прогнозата:</strong> @(Math.Round(accuracy.Value * 100))%</p>
         }
     </div>
 
     @if (!string.IsNullOrEmpty(imagePath))
     {
         <div class="image-container">
-            <h2>Uploaded Image:</h2>
+            <h2>Заредено изображение:</h2>
             <img src="@imagePath" alt="Uploaded Image" class="uploaded-image" />
         </div>
     }
