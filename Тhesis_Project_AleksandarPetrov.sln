@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageClassificationApp.Web", "ImageClassificationApp.Web\ImageClassificationApp.Web.csproj", "{BBF2A6A8-8B42-4D59-BD2B-B079402511BD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BBF2A6A8-8B42-4D59-BD2B-B079402511BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBF2A6A8-8B42-4D59-BD2B-B079402511BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBF2A6A8-8B42-4D59-BD2B-B079402511BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBF2A6A8-8B42-4D59-BD2B-B079402511BD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5A368EFA-E4D9-4496-A0F9-CF72FDFEBAAC}
+	EndGlobalSection
+EndGlobal
