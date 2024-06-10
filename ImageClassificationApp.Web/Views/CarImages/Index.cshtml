@@ -1,0 +1,36 @@
+﻿@{
+    ViewData["Title"] = "Car Images - Upload Image";
+}
+
+<div class="upload-container">
+    <h1>Качване на изображение за класификация на автомобили</h1>
+
+    <form method="post" enctype="multipart/form-data" asp-controller="CarImages" asp-action="ClassifyImage">
+        <div class="form-group">
+            <label for="file-upload" class="form-label">Изберете изображение:</label>
+            <input type="file" id="file-upload" name="file" class="form-control" accept="image/*" />
+        </div>
+        <div class="form-group">
+            <label class="form-label">Или използвайте камерата:</label>
+            <input type="file" id="file-camera" name="file" class="form-control" accept="image/*" capture="environment" style="display: none;" />
+            <button type="button" id="cameraButton" class="btn btn-secondary">Използвайте камерата</button>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">Зареждане на</button>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    <script>
+        document.getElementById('cameraButton').addEventListener('click', function() {
+            document.getElementById('file-camera').click();
+        });
+
+        document.getElementById('file-camera').addEventListener('change', function() {
+            if (this.files && this.files.length > 0) {
+                document.querySelector('form').submit();
+            }
+        });
+    </script>
+}

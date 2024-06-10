@@ -1,0 +1,29 @@
+﻿@using ImageClassificationApp_Web
+@model MLModel_Cars.ModelOutput
+
+@{
+    ViewData["Title"] = "Classification Result";
+    var imagePath = ViewData["ImagePath"] as string;
+    var accuracy = ViewData["Accuracy"] as float?;
+}
+
+<div class="result-container">
+    <h1>Classification Result</h1>
+
+    <div class="result-details">
+        <p><strong>Predicted Label:</strong> @Model.PredictedLabel</p>
+
+        @if (accuracy.HasValue)
+        {
+            <p><strong>Prediction Accuracy:</strong> @(Math.Round(accuracy.Value * 100))%</p>
+        }
+    </div>
+
+    @if (!string.IsNullOrEmpty(imagePath))
+    {
+        <div class="image-container">
+            <h2>Uploaded Image:</h2>
+            <img src="@imagePath" alt="Uploaded Image" class="uploaded-image" />
+        </div>
+    }
+</div>
