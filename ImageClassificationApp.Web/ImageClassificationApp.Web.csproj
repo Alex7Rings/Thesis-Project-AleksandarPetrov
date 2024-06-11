@@ -9,11 +9,6 @@
     <PackageReference Include="Microsoft.ML.Vision" Version="2.0.0" />
     <PackageReference Include="SciSharp.TensorFlow.Redist" Version="2.3.1" />
   </ItemGroup>
-  <ItemGroup Label="MLModel_Sport">
-    <None Include="MLModel_Sport.mlnet">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
   <ItemGroup Label="MLModel_Art">
     <None Include="MLModel_Art.mlnet">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -21,6 +16,11 @@
   </ItemGroup>
   <ItemGroup Label="MLModel_Cars">
     <None Include="MLModel_Cars.mlnet">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup Label="MLModel_Sport">
+    <None Include="MLModel_Sport.mlnet">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
