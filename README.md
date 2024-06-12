@@ -71,17 +71,6 @@ The performance of the models was evaluated using metrics such as accuracy, prec
 - .NET 5.0 or later
 - ML.NET Model Builder
 
-### Installation
-
-1. Clone the repository:
-    ```sh
-    git clone https://github.com/yourusername/your-repo-name.git
-    ```
-2. Open the solution in Visual Studio.
-
-3. Ensure the required datasets are downloaded and placed in the appropriate directories.
-
-4. Build the solution to restore dependencies.
 
 ## Usage
 
