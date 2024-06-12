@@ -90,10 +90,6 @@ The performance of the models was evaluated using metrics such as accuracy, prec
 3. **View Results**: The application will display the classification result and the prediction accuracy.
 
 
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
-
 ---
 
 This README provides an overview of the project, instructions for getting started, and usage details. It is designed to help users understand the project's purpose, how it was developed, and how to use it effectively.
