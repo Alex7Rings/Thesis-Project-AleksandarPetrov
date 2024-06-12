@@ -89,12 +89,6 @@ The performance of the models was evaluated using metrics such as accuracy, prec
 2. **Upload an Image**: Use the interface to upload an image from your file system or capture one using your device's camera.
 3. **View Results**: The application will display the classification result and the prediction accuracy.
 
-## Screenshots
-
-1. **Model Builder Training Process**: ![Model Builder Training](screenshots/model-builder-training.png)
-2. **ASP.NET MVC Application Interface**: ![Application Interface](screenshots/application-interface.png)
-3. **Image Upload Page**: ![Image Upload](screenshots/image-upload.png)
-4. **Classification Result Display**: ![Classification Result](screenshots/classification-result.png)
 
 ## License
 
