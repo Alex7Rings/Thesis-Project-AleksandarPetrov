@@ -37,7 +37,6 @@ body {
     padding: 20px;
     background-color: #f8f9fa;
     border-radius: 8px;
-    border-color: orange;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: #333; /* Dark background */
     color: #fff; /* White text */
@@ -105,7 +104,7 @@ body {
 .form-control {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #ffa500; /* Dark orange border */
     border-radius: 4px;
     background-color: #444; /* Darker background for inputs */
     color: #fff; /* White text */
@@ -136,6 +135,46 @@ body {
     border-color: #fff !important;
 }
 
-.home{
-    background-color: red;
+/* New CSS for the index page */
+.index {
+    background-color: #ff8c00; /* Dark orange */
+    color: #fff; /* White text */
+}
+
+    .index h1, .index h3 {
+        color: #fff;
+    }
+
+    .index .btn {
+        background-color: #ff8c00;
+        color: #fff;
+    }
+
+        .index .btn:hover {
+            background-color: #ffa500;
+        }
+
+/* Ensure all form elements have a dark orange border */
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+textarea,
+select,
+.form-control {
+    border: 1px solid #ffa500; /* Dark orange border */
+    background-color: #444; /* Darker background for inputs */
+    color: #fff; /* White text */
+    border-radius: 4px;
+    padding: 10px;
 }
