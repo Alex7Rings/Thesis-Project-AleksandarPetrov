@@ -1,21 +1,35 @@
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    background: #333; /* Dark background for contrast */
+    color: #fff; /* White text for readability */
 }
+
+.navbar-darkorange {
+    background-color: #ff8c00;
+}
+
+.nav-link {
+    color: #fff !important;
+}
+
+    .nav-link:hover {
+        color: #ddd !important;
+    }
 
 .result-container {
     max-width: 600px;
@@ -23,12 +37,16 @@ body {
     padding: 20px;
     background-color: #f8f9fa;
     border-radius: 8px;
+    border-color: orange;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #333; /* Dark background */
+    color: #fff; /* White text */
 }
 
     .result-container h1 {
         text-align: center;
         margin-bottom: 20px;
+        color: #ffa500; /* Dark orange */
     }
 
 .result-details {
@@ -46,12 +64,13 @@ body {
 
     .image-container h2 {
         margin-bottom: 10px;
+        color: #ffa500; /* Dark orange */
     }
 
 .uploaded-image {
     max-width: 100%;
     height: auto;
-    border: 2px solid #ddd;
+    border: 2px solid #ffa500; /* Dark orange border */
     border-radius: 8px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
@@ -60,14 +79,16 @@ body {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #f8f9fa;
+    background-color: #333; /* Dark background */
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #fff; /* White text */
 }
 
     .upload-container h1 {
         text-align: center;
         margin-bottom: 20px;
+        color: #ffa500; /* Dark orange */
     }
 
 .form-group {
@@ -78,6 +99,7 @@ body {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
+    color: #ffa500; /* Dark orange */
 }
 
 .form-control {
@@ -85,11 +107,13 @@ body {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    background-color: #444; /* Darker background for inputs */
+    color: #fff; /* White text */
 }
 
 .btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
+    background-color: #ffa500; /* Dark orange */
+    border-color: #ffa500; /* Dark orange */
     color: #fff;
     padding: 10px 20px;
     font-size: 16px;
@@ -99,6 +123,19 @@ body {
 }
 
     .btn-primary:hover {
-        background-color: #0056b3;
-        border-color: #004085;
+        background-color: #ff8c00; /* Darker orange */
+        border-color: #ff8c00; /* Darker orange */
     }
+
+.bg-darkorange {
+    background-color: #ff8c00;
+    color: #fff;
+}
+
+.border-white {
+    border-color: #fff !important;
+}
+
+.home{
+    background-color: red;
+}
