@@ -1,6 +1,8 @@
 # Тhesis_Project_AleksandarPetrov
 # Image Classification with ML.NET and ASP.NET MVC
 
+![Screenshot 2024-06-19 184939](https://github.com/user-attachments/assets/e92a7c93-aa06-4b7d-be58-4ecd3adbc115)
+
 ## Table of Contents
 
 - [Objective](#objective)
